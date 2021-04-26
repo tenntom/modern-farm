@@ -1,7 +1,13 @@
 
-import {createPlan} from "./plan.js";
+import { createAsparagus } from "./seeds/asparagus.js"
 
-const yearlyPlan = createPlan (crop);
+const asparagusSeed = createAsparagus()
+console.log(asparagusSeed)
+
+
+import { createPlan } from "./plan.js";
+
+const yearlyPlan = createPlan ("Corn");
 
 console.log(yearlyPlan)
 
