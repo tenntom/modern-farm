@@ -11,7 +11,7 @@ const seeds = [
     },
     {
         type: "Corn",
-        height: 180,
+        height: 160,
         output: 4,
     },
     {
@@ -31,7 +31,7 @@ const seeds = [
     },
     {
         type: "Corn",
-        height: 180,
+        height: 200,
         output: 4,
     }
 ]

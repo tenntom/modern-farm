@@ -2,7 +2,7 @@ import { getSeeds } from "./seeds.js"
 
 const seeds = getSeeds()
 
-export const createCorn = () => {
+export const createCorn = () => {  //I think I overcomplicated this exercise. See Asparagus for a simplier version. 
     for (const seed of seeds) {
         if (seed.type === "Corn") {
             return seed

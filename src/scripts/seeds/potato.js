@@ -1,11 +1,19 @@
-import { getSeeds } from "./seeds.js"
+// import { getSeeds } from "./seeds.js"
 
-const seeds = getSeeds()
+// const seeds = getSeeds()
+
+// export const createPotato = () => {     //I think I overcomplicated this exercise. See Asparagus for a simplier version.
+//     for (const seed of seeds) {
+//         if (seed.type === "Potato") {
+//             return seed
+//         }
+//     }
+// }
 
 export const createPotato = () => {
-    for (const seed of seeds) {
-        if (seed.type === "Potato") {
-            return seed
-        }
+    return {
+        type: "Potato",
+        height: 32,
+        output: 2
     }
 }
