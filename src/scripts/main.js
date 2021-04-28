@@ -5,6 +5,10 @@ import { createCorn } from "./seeds/corn.js"
 import { createAsparagus} from "./seeds/asparagus.js"
 import { createWheat } from "./seeds/wheat.js"
 import { createSunflower} from "./seeds/sunflower.js"
+import { usePlants } from "./field.js"
+import { plantSeeds } from "./tractor.js"
+import { createPlan } from "./plan.js"
+// import { harvestPlants } from "./harvester.js"
 
 const potatoSeed = createPotato()
 const soybeanSeed = createSoybean()
@@ -18,14 +22,18 @@ const sunflowerSeed = createSunflower()
 // console.log(sunflowerSeed)
 // console.log(soybeanSeed)
 // console.log(asparagusSeed)
-// console.log(wheatSeed)
+// // console.log(wheatSeed)
 
 
-import { createPlan } from "./plan.js";
 
-const yearlyPlan = createPlan ("Corn");
+const yearlyPlan = createPlan (); // Making the plan
 
-console.log(yearlyPlan)
+plantSeeds(yearlyPlan) //using the plan to put the seeds in the plants array
 
+console.log(yearlyPlan) // checking the original yearly Plan function
+
+const plants = usePlants() //updating the copy of the array
+
+console.log(plants) //checking to see that the plans match.
 
 
